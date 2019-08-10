@@ -3,6 +3,7 @@
 #include <vector>
 #include <array>
 #include <string>
+#include <hash_set>
 using namespace std;
 //TODO implement magic weapons
 //TODO implement dps/statuses
@@ -83,10 +84,9 @@ struct ThunderSpell : Spell, Thunder
 	extern DivineSpell bless;
 	extern DivineSpell greater_bless;
 
-
-vector <FireSpell> FSpellList;
-vector <IceSpell> ISpellList;
-vector <ThunderSpell> TSpellList;
+hash_set <FireSpell> FSpellSet;
+hash_set <IceSpell> ISpellSet;
+hash_set <ThunderSpell> TSpellSet;
 
 //vector<Spell> PlayerSpells[3] = { vector <FireSpell> PlayerFireSpells, vector <IceSpell> PlayerIceSpells, vector <ThunderSpell> PlayerThunderSpells };
 
